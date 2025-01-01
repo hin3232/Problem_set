@@ -9,7 +9,7 @@ int main(){
    
     for (int i=0;i<5;i++){
          printf("Enter details for student %d\n", i + 1); 
-         while (getchar() != '\n' && getchar() != EOF); 
+         getchar(); 
           printf("Enter name: ");
           fgets(s[i].name,sizeof(s[i].name),stdin);
           s[i].name[strcspn(s[i].name,"\n")]='\0';
